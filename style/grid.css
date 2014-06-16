@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+* { position: relative; box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; }
+.gridContainer { overflow: hidden; max-width: 960px; margin: auto; }
+[class*="col-"] { float: left; padding-left: 5px; padding-right: 5px; }
+.noGutter { padding-left: 0; padding-right: 0; }
+.empty { height: 1px; }
+/* Colunm width */
+.col-1-12 { width: 8.33%; }
+.col-2-12 { width: 16.66%; }
+.col-3-12 { width: 25%; }
+.col-4-12 { width: 33.33%; }
+.col-5-12 { width: 41.66%; }
+.col-6-12 { width: 50%; }
+.col-7-12 { width: 58.33%; }
+.col-8-12 { width: 66.66%; }
+.col-9-12 { width: 75%; }
+.col-10-12 { width: 83.33%; }
+.col-11-12 { width: 91.66%; }
+.col-12-12 { width: 100%; }
+/* Addition */
+.col-1-5 { width: 20%; }
+
+.gridContainer.clearfix {
+	overflow: visible;
+}
+.gridContainer.scroll {
+	overflow: auto;
+}

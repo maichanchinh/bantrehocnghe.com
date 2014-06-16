@@ -1,79 +1,117 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
+<head>
+<meta charset="utf-8">
+<title>Bạn trẻ học nghề</title>
+<!-- <link href="http://vjs.zencdn.net/4.5/video-js.css" rel="stylesheet"> -->
+<link rel="stylesheet" type="text/css" href="style/grid.css">
+<link rel="stylesheet" type="text/css" href="style/intro.css">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="http://www.youtube.com/player_api"></script>
+<script src="script/iscroll.js"></script>
+<script src="script/intro.js"></script>
+<!-- <script src="http://vjs.zencdn.net/4.5/video.js"></script> -->
+</head>
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Bantrehocnghe.com : bantrehocnghe.com" />
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Bantrehocnghe.com</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/maichanchinh/bantrehocnghe.com">View on GitHub</a>
-
-          <h1 id="project_title">Bantrehocnghe.com</h1>
-          <h2 id="project_tagline">bantrehocnghe.com</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/maichanchinh/bantrehocnghe.com/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/maichanchinh/bantrehocnghe.com/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Bantrehocnghe.com maintained by <a href="https://github.com/maichanchinh">maichanchinh</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
-  </body>
+<body>
+<div class="popUp">
+	<a class="close">Close</a>
+	<div id="scroll">
+		<div class="content">Website thiết kế để tham dự Cuộc thi Học nghề Tương lai và Tiếng nói của bạn. Cuộc thi do Tổng cục Dạy nghề và Hội đồng Anh phối hợp tổ chức. Các thông tin thể hiện tại trang web chỉ mang tính chất ý tưởng phục vụ cho Cuộc thi và không mang tính chính thức.<br>
+		<a href="http://hocnghe.tcdn.gov.vn/website2014/Pages/CDN-Cong-nghe-cao-Ha-Noi.aspx">Bình chọn cho chúng tôi!</a>
+	</div>
+	</div>
+</div>
+<div id="header">
+	<div class="marquee">LUÔN CÓ NHỮNG CƠ HỘI MỚI ĐANG CHỜ ĐÓN PHÍA TRƯỚC GIÚP BẠN TÌM HƯỚNG ĐI PHÙ HỢP NHẤT CHO BẢN THÂN MÌNH</div>
+</div>
+<div id="content">
+	<div class="gridContainer"> <img id="logo" src="images/logo.png" alt="Bạn trẻ học nghề"/> </div>
+	<div class="cover front">
+		<div class="pull"> KÉO RA </div>
+		<div class="push front"> ĐẨY VỀ </div>
+		<div id="slider"> <img src="/images/slider/1.jpg" alt=""> <img src="/images/slider/2.jpg" alt=""> <img src="/images/slider/3.jpg" alt=""> <img src="/images/slider/4.jpg" alt=""> <img src="/images/slider/5.jpg" alt=""> </div>
+		<div class="gridContainer">
+			<div class="col-7-12 empty">
+				<div class="wrapper">
+					<div id="tipContent">
+						<div id="tip-1" class="tip">
+							<div class="scoller">
+								<p>Học sinh tốt nghiệp THCS và THPT hiện có xu hướng không lựa chọn đi học nghề. Học nghề vẫn là phương án dự bị để đề phòng trường hợp trượt tốt nghiệp THPT, không đỗ đại học…hay nói một cách đầy thẳng thắn như Bộ trưởng Phạm Vũ Luận, đây là con đường dành cho những ai “sa cơ lỡ vận”. Cùng với suy nghĩ phổ biến của xã hội là “học nghề ít cơ hội”, “học nghề thu nhập thấp”, “học sinh kém mới đi học nghề”...đã khiến cho công tác phân luồng học sinh vốn có vai trò quan trọng trong hình thành cơ cấu nhân lực của quốc gia đến nay đã không đạt được hiệu quả như mong đợi.</p>
+								<p>Mỗi năm cả nước có một lực lượng thanh niên đến tuổi lao động chưa được đào tạo nghề nghiệp lên đến hàng trăm nghìn người. Đa phần trong số đó là các học sinh tốt nghiệp Trung học cơ sở (THCS) không vào học Trung học phổ thông (THPT), học sinh bỏ học THPT, thi trượt tốt nghiệp lớp 12, trượt cao đẳng và đại học… Hiệu quả nhất về mặt kinh tế là số học sinh này được đi theo hướng học nghề. Nhưng trên thực tế, việc phân luồng học sinh trong những năm qua hết sức khó khăn, học sinh đi học nghề hiện nay chiếm tỷ lệ rất thấp, chỉ 5-6% so với mục tiêu đề ra là 30%. Ba năm qua, có những trường nghề, cơ sở giáo dục nghề nghiệp không tuyển đủ chỉ tiêu, có trường đứng trước nguy cơ giải thể mặc dù nguồn tuyển trên địa bàn không thiếu.</p>
+							</div>
+						</div>
+						<!-- Tip -->
+						<div id="tip-2" class="tip">
+							<div class="scoller">
+								<p><strong>Theo thống kê của các cơ quan chức năng, hằng năm cả nước có tới hàng nghìn học sinh trượt kỳ thi tốt nghiệp THPT. Bên cạnh đó cơ hội thi đỗ đại học, cao đẳng cũng chỉ chiếm tỉ lệ thấp khiến cho một số lượng khá đông bạn trẻ mất phương hướng nghề nghiệp tăng cao.&nbsp;</strong></p>
+								<p>Điều này không có nghĩa là các bạn mất hết cơ hội theo đuổi niềm đam mê của mình, ngược lại, các bạn có thể biến đam mê của mình thành hiện thực tại các trường dạy nghề. Hiện nay, Việt Nam có nhiều chính sách khuyến khích học nghề. Học sinh sau khi tốt nghiệp THCS hoặc THPT mà đăng ký vào học tại các trường nghề được đặc biệt quan tâm. Thế nhưng, số lượng học viên theo học chưa được như mong muốn.</p>
+								<p>Ông Dương Đức Lân, Phó tổng cục trưởng Tổng cục Dạy nghề cho biết: “Hiện nay, các trường nghề chưa được nhiều học sinh quan tâm, bởi vì chúng ta chưa làm tốt công tác tư tưởng cho các em. Đơn cử như ở các nước châu Âu, học sinh tốt nghiệp THCS vào THPT chỉ khống chế khoảng 40%. Cá biệt như Cộng hòa Séc và Phần Lan chỉ khoảng 20% học sinh tốt nghiệp THCS vào THPT, còn lại các em được đi học nghề. Tất nhiên khi học nghề họ cũng được học cả văn hóa, nhưng theo con đường nghề. Sau khi tốt nghiệp đi làm, lương của những người có tay nghề thực sự cao và ở môi trường nào họ cũng rất “đắt hàng”.</p>
+								<p>Còn ở nước ta thì ngược lại, khi không còn sự lựa chọn nào để vào cánh cổng đại học, cao đẳng, học sinh mới chọn trường dạy nghề. Thực sự sai lầm khi nghĩ rằng, đi học nghề cơ bản chỉ sử dụng sức lao động, học nghề bạn phải có một phông văn hóa nhất định để tiếp thu những gì giảng viên truyền đạt, học nghề, đồng thời phải học cả văn hóa, không những nâng cao tay nghề mà còn nâng cao kiến thức của mình. Tôi khuyên những bạn trẻ không vì định kiến về bằng cấp của xã hội, hãy chọn cho mình một ngành nghề phù hợp, rồi sau đó dần nâng cấp chuyển đổi lên bậc học cao hơn đáp ứng nhu cầu đòi hỏi của trình độ khoa học công nghệ hiện nay”.</p>
+								<p>Nhằm tạo cơ hội cho các em trượt tốt nghiệp THPT và không trúng tuyển vào đại học, cao đẳng có hướng học tập phù hợp với năng lực và sở thích của bản thân, góp phần giảm áp lực số lượng lao động không được đào tạo gia tăng, Nhà nước đã chủ trương khuyến khích các em chọn học tại các trường cao đẳng nghề, trung cấp nghề. Với phương thức tuyển sinh xét tuyển mà không phải thi cử, đào tạo liên thông tại các trường đào tạo nghề thì việc lựa chọn một ngành học phù hợp tại đây là phương án khả thi cho các thí sinh. Việc theo học tại các trường đào tạo nghề không những giúp các thí sinh không trúng tuyển vào đại học có cơ hội học tiếp mà còn cho các bạn học sinh thi trượt tốt nghiệp THPT tiết kiệm thời gian nhàn rỗi, được đào tạo nghề và kỹ năng, nhanh chóng có công ăn việc làm ổn định. Với các đối tượng có nhu cầu liên thông, nâng cấp bậc học và nâng cao trình độ, họ vẫn có thể đăng ký học.</p>
+								<p>Mô hình đào tạo liên thông từ trung cấp lên cao đẳng và từ cao đẳng lên đại học là xu hướng đang được ưa chuộng. Như vậy, các trường đào tạo nghề vừa có thể đáp ứng ngay lực lượng lao động chuyên nghiệp, tạo hướng mở cho những người có nguyện vọng học cao hơn. Ngoài việc thường xuyên cập nhật và nâng cấp giáo trình cho cả giảng viên và người học để phù hợp với sự phát triển nhanh chóng của tri thức trong thời đại công nghệ, xây dựng hệ thống trang thiết bị học tập, cơ sở vật chất hiện đại, môi trường học tập chuyên nghiệp thì việc quan trọng nhất mà hầu hết các trường dạy nghề đang cố gắng đẩy mạnh đó là liên kết chặt chẽ với doanh nghiệp. Doanh nghiệp có thể tư vấn và hỗ trợ cho nhà trường và người theo học, lại có ngay nguồn nhân lực khi có nhu cầu tuyển dụng, nhà trường nắm rõ được yêu cầu tuyển dụng của doanh nghiệp mà đào tạo đúng, người theo học có cơ hội tiếp xúc thực tế thường xuyên để nâng cao tay nghề trau dồi kỹ năng.</p>
+								<p>(<em>Sưu tầm</em>)</p>
+							</div>
+						</div>
+						<!-- Tip -->
+						<!-- Tip -->
+						<div id="tip-3" class="tip">
+							<div class="scoller">
+								<p><strong>Theo thống kê của các cơ quan chức năng, hằng năm cả nước có tới hàng nghìn học sinh trượt kỳ thi tốt nghiệp THPT. Bên cạnh đó cơ hội thi đỗ đại học, cao đẳng cũng chỉ chiếm tỉ lệ thấp khiến cho một số lượng khá đông bạn trẻ mất phương hướng nghề nghiệp tăng cao.&nbsp;</strong></p>
+								<p>Điều này không có nghĩa là các bạn mất hết cơ hội theo đuổi niềm đam mê của mình, ngược lại, các bạn có thể biến đam mê của mình thành hiện thực tại các trường dạy nghề. Hiện nay, Việt Nam có nhiều chính sách khuyến khích học nghề. Học sinh sau khi tốt nghiệp THCS hoặc THPT mà đăng ký vào học tại các trường nghề được đặc biệt quan tâm. Thế nhưng, số lượng học viên theo học chưa được như mong muốn.</p>
+								<p>Ông Dương Đức Lân, Phó tổng cục trưởng Tổng cục Dạy nghề cho biết: “Hiện nay, các trường nghề chưa được nhiều học sinh quan tâm, bởi vì chúng ta chưa làm tốt công tác tư tưởng cho các em. Đơn cử như ở các nước châu Âu, học sinh tốt nghiệp THCS vào THPT chỉ khống chế khoảng 40%. Cá biệt như Cộng hòa Séc và Phần Lan chỉ khoảng 20% học sinh tốt nghiệp THCS vào THPT, còn lại các em được đi học nghề. Tất nhiên khi học nghề họ cũng được học cả văn hóa, nhưng theo con đường nghề. Sau khi tốt nghiệp đi làm, lương của những người có tay nghề thực sự cao và ở môi trường nào họ cũng rất “đắt hàng”.</p>
+								<p>Còn ở nước ta thì ngược lại, khi không còn sự lựa chọn nào để vào cánh cổng đại học, cao đẳng, học sinh mới chọn trường dạy nghề. Thực sự sai lầm khi nghĩ rằng, đi học nghề cơ bản chỉ sử dụng sức lao động, học nghề bạn phải có một phông văn hóa nhất định để tiếp thu những gì giảng viên truyền đạt, học nghề, đồng thời phải học cả văn hóa, không những nâng cao tay nghề mà còn nâng cao kiến thức của mình. Tôi khuyên những bạn trẻ không vì định kiến về bằng cấp của xã hội, hãy chọn cho mình một ngành nghề phù hợp, rồi sau đó dần nâng cấp chuyển đổi lên bậc học cao hơn đáp ứng nhu cầu đòi hỏi của trình độ khoa học công nghệ hiện nay”.</p>
+								<p>Nhằm tạo cơ hội cho các em trượt tốt nghiệp THPT và không trúng tuyển vào đại học, cao đẳng có hướng học tập phù hợp với năng lực và sở thích của bản thân, góp phần giảm áp lực số lượng lao động không được đào tạo gia tăng, Nhà nước đã chủ trương khuyến khích các em chọn học tại các trường cao đẳng nghề, trung cấp nghề. Với phương thức tuyển sinh xét tuyển mà không phải thi cử, đào tạo liên thông tại các trường đào tạo nghề thì việc lựa chọn một ngành học phù hợp tại đây là phương án khả thi cho các thí sinh. Việc theo học tại các trường đào tạo nghề không những giúp các thí sinh không trúng tuyển vào đại học có cơ hội học tiếp mà còn cho các bạn học sinh thi trượt tốt nghiệp THPT tiết kiệm thời gian nhàn rỗi, được đào tạo nghề và kỹ năng, nhanh chóng có công ăn việc làm ổn định. Với các đối tượng có nhu cầu liên thông, nâng cấp bậc học và nâng cao trình độ, họ vẫn có thể đăng ký học.</p>
+								<p>Mô hình đào tạo liên thông từ trung cấp lên cao đẳng và từ cao đẳng lên đại học là xu hướng đang được ưa chuộng. Như vậy, các trường đào tạo nghề vừa có thể đáp ứng ngay lực lượng lao động chuyên nghiệp, tạo hướng mở cho những người có nguyện vọng học cao hơn. Ngoài việc thường xuyên cập nhật và nâng cấp giáo trình cho cả giảng viên và người học để phù hợp với sự phát triển nhanh chóng của tri thức trong thời đại công nghệ, xây dựng hệ thống trang thiết bị học tập, cơ sở vật chất hiện đại, môi trường học tập chuyên nghiệp thì việc quan trọng nhất mà hầu hết các trường dạy nghề đang cố gắng đẩy mạnh đó là liên kết chặt chẽ với doanh nghiệp. Doanh nghiệp có thể tư vấn và hỗ trợ cho nhà trường và người theo học, lại có ngay nguồn nhân lực khi có nhu cầu tuyển dụng, nhà trường nắm rõ được yêu cầu tuyển dụng của doanh nghiệp mà đào tạo đúng, người theo học có cơ hội tiếp xúc thực tế thường xuyên để nâng cao tay nghề trau dồi kỹ năng.</p>
+								<p>(<em>Sưu tầm</em>)</p>
+							</div>
+						</div>
+						<!-- Tip -->
+						<!-- Tip -->
+						<div id="tip-4" class="tip">
+							<div class="scoller">
+								<p><strong>Theo thống kê của các cơ quan chức năng, hằng năm cả nước có tới hàng nghìn học sinh trượt kỳ thi tốt nghiệp THPT. Bên cạnh đó cơ hội thi đỗ đại học, cao đẳng cũng chỉ chiếm tỉ lệ thấp khiến cho một số lượng khá đông bạn trẻ mất phương hướng nghề nghiệp tăng cao.&nbsp;</strong></p>
+								<p>Điều này không có nghĩa là các bạn mất hết cơ hội theo đuổi niềm đam mê của mình, ngược lại, các bạn có thể biến đam mê của mình thành hiện thực tại các trường dạy nghề. Hiện nay, Việt Nam có nhiều chính sách khuyến khích học nghề. Học sinh sau khi tốt nghiệp THCS hoặc THPT mà đăng ký vào học tại các trường nghề được đặc biệt quan tâm. Thế nhưng, số lượng học viên theo học chưa được như mong muốn.</p>
+								<p>Ông Dương Đức Lân, Phó tổng cục trưởng Tổng cục Dạy nghề cho biết: “Hiện nay, các trường nghề chưa được nhiều học sinh quan tâm, bởi vì chúng ta chưa làm tốt công tác tư tưởng cho các em. Đơn cử như ở các nước châu Âu, học sinh tốt nghiệp THCS vào THPT chỉ khống chế khoảng 40%. Cá biệt như Cộng hòa Séc và Phần Lan chỉ khoảng 20% học sinh tốt nghiệp THCS vào THPT, còn lại các em được đi học nghề. Tất nhiên khi học nghề họ cũng được học cả văn hóa, nhưng theo con đường nghề. Sau khi tốt nghiệp đi làm, lương của những người có tay nghề thực sự cao và ở môi trường nào họ cũng rất “đắt hàng”.</p>
+								<p>Còn ở nước ta thì ngược lại, khi không còn sự lựa chọn nào để vào cánh cổng đại học, cao đẳng, học sinh mới chọn trường dạy nghề. Thực sự sai lầm khi nghĩ rằng, đi học nghề cơ bản chỉ sử dụng sức lao động, học nghề bạn phải có một phông văn hóa nhất định để tiếp thu những gì giảng viên truyền đạt, học nghề, đồng thời phải học cả văn hóa, không những nâng cao tay nghề mà còn nâng cao kiến thức của mình. Tôi khuyên những bạn trẻ không vì định kiến về bằng cấp của xã hội, hãy chọn cho mình một ngành nghề phù hợp, rồi sau đó dần nâng cấp chuyển đổi lên bậc học cao hơn đáp ứng nhu cầu đòi hỏi của trình độ khoa học công nghệ hiện nay”.</p>
+								<p>Nhằm tạo cơ hội cho các em trượt tốt nghiệp THPT và không trúng tuyển vào đại học, cao đẳng có hướng học tập phù hợp với năng lực và sở thích của bản thân, góp phần giảm áp lực số lượng lao động không được đào tạo gia tăng, Nhà nước đã chủ trương khuyến khích các em chọn học tại các trường cao đẳng nghề, trung cấp nghề. Với phương thức tuyển sinh xét tuyển mà không phải thi cử, đào tạo liên thông tại các trường đào tạo nghề thì việc lựa chọn một ngành học phù hợp tại đây là phương án khả thi cho các thí sinh. Việc theo học tại các trường đào tạo nghề không những giúp các thí sinh không trúng tuyển vào đại học có cơ hội học tiếp mà còn cho các bạn học sinh thi trượt tốt nghiệp THPT tiết kiệm thời gian nhàn rỗi, được đào tạo nghề và kỹ năng, nhanh chóng có công ăn việc làm ổn định. Với các đối tượng có nhu cầu liên thông, nâng cấp bậc học và nâng cao trình độ, họ vẫn có thể đăng ký học.</p>
+								<p>Mô hình đào tạo liên thông từ trung cấp lên cao đẳng và từ cao đẳng lên đại học là xu hướng đang được ưa chuộng. Như vậy, các trường đào tạo nghề vừa có thể đáp ứng ngay lực lượng lao động chuyên nghiệp, tạo hướng mở cho những người có nguyện vọng học cao hơn. Ngoài việc thường xuyên cập nhật và nâng cấp giáo trình cho cả giảng viên và người học để phù hợp với sự phát triển nhanh chóng của tri thức trong thời đại công nghệ, xây dựng hệ thống trang thiết bị học tập, cơ sở vật chất hiện đại, môi trường học tập chuyên nghiệp thì việc quan trọng nhất mà hầu hết các trường dạy nghề đang cố gắng đẩy mạnh đó là liên kết chặt chẽ với doanh nghiệp. Doanh nghiệp có thể tư vấn và hỗ trợ cho nhà trường và người theo học, lại có ngay nguồn nhân lực khi có nhu cầu tuyển dụng, nhà trường nắm rõ được yêu cầu tuyển dụng của doanh nghiệp mà đào tạo đúng, người theo học có cơ hội tiếp xúc thực tế thường xuyên để nâng cao tay nghề trau dồi kỹ năng.</p>
+								<p>(<em>Sưu tầm</em>)</p>
+							</div>
+						</div>
+						<!-- Tip -->
+					</div>
+				</div>
+			</div>
+			<div id="tips" class="front col-5-12"> <a href="#tip-1" class="item">Học nghề ở đâu?</a> <a href="#tip-2" class="item">Tại sao chọn học nghề?</a> <a href="#tip-3" class="item">Tấm gương người thợ giỏi</a> <a href="#tip-4" class="item">Tiếng nói bạn trẻ học nghề</a> </div>
+		</div>
+	</div>
+	<div class="cover video">
+		<div class="pull"> VIDEO </div>
+		<div class="push front"> ĐẨY VỀ </div>
+		<div id="youtube" class="middle">
+			<iframe id="player" src="//www.youtube.com/embed/B778io_S94c?version=3&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+		</div>
+	</div>
+	<div id="social" class="front"> <a href="http://facebook.com/BanTreHocNghe"><img src="images/facebook.png"  alt="Facebook"/></a> <a href="http://www.youtube.com/channel/UCt5y885UFplu2okY39TBwCg"><img src="images/youtube.png"  alt=""/></a> <a href="http://twitter.com/"><img src="images/twitter.png"  alt=""/></a> </div>
+</div>
+<div id="footer" class="front">
+	<div class="gridContainer">
+		<nav id="menu" class="clearfix">
+			<div class="magic-1"></div>
+			<div class="item col-2-12"><a class="active select" href="./">TRANG CHỦ</a></div>
+			<div class="item col-2-12"><a href="nghe-tuong-lai/">NGHỀ <br>
+				TƯƠNG LAI</a></div>
+			<div class="item col-2-12"><a href="tin-tuc-hoc-nghe/">TIN TỨC <br>
+				HỌC NGHỀ</a></div>
+			<div class="item col-2-12"><a href="tuyen-dung/viec-tim-nguoi/">VIỆC <br>
+				TÌM NGƯỜI</a></div>
+			<div class="item col-2-12"><a href="tuyen-dung/nguoi-tim-viec/">NGƯỜI <br>
+				TÌM VIỆC</a></div>
+			<div class="item col-2-12"><a href="lien-he/">LIÊN HỆ</a></div>
+			<div class="magic-2"></div>
+		</nav>
+	</div>
+</div>
+</body>
 </html>
